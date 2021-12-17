@@ -4739,7 +4739,7 @@ ul {
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 0;
@@ -4781,15 +4781,15 @@ ul {
   color: #f0c300;
 }
 .tabs ul.tab-links-3 {
-  float: right;
+  /* float: right; */
   right: 0;
   margin-top: -40px;
 }
 @media (max-width: 767px) {
   .tabs ul.tab-links-3 {
     margin-top: 0;
-    float: left;
-    left: 0;
+    /* float: left; */
+    /* left: 0; */
   }
 }
 .tabs .tab {
@@ -4804,7 +4804,7 @@ ul {
 }
 @media (max-width: 767px) {
   .tabs ul.tabs-mv {
-    padding: 10px 0;
+    padding: 0px 0;
   }
 }
 .tabs ul.tabs-mv li {
