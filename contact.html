@@ -137,39 +137,39 @@
     <header class="ht-header full-width-hd">
         <div class="row">
             <nav id="mainNav" class="navbar navbar-default navbar-custom">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header logo">
-					<div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<div id="nav-icon1">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-					</div>
-					<a href="index.html"><img class="logo" src="assets/images/logo.png" alt="" width="119"
-							height="58"></a>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav flex-child-menu menu-left">
-						<li class="hidden">
-							<a href="#page-top"></a>
-						</li>
-						<li class="dropdown first">
-							<a  href="index.html" data-hover="dropdown">
-								Home
-							</a>
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header logo">
+                    <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <div id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <a href="index.html"><img class="logo" src="assets/images/logo.png" alt="" width="119"
+                            height="58"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav flex-child-menu menu-left">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="index.html" data-hover="dropdown">
+                                Home
+                            </a>
 
-						</li>
-						<li class="dropdown first">
-							<a  href="about.html"  data-hover="dropdown">
-								About US 
-							</a>
-							
+                        </li>
+                        <li class="dropdown first">
+                            <a href="about.html" data-hover="dropdown">
+                                About US
+                            </a>
 
-						</li>
-						<!-- <li class="dropdown first">
+
+                        </li>
+                        <!-- <li class="dropdown first">
 							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
 								celebrities <i class="fa fa-angle-down" aria-hidden="true"></i>
 							</a>
@@ -180,44 +180,46 @@
 								<li class="it-last"><a href="celebritysingle.html">celebrity single</a></li>
 							</ul>
 						</li> -->
-						<li class="dropdown first">
-							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-								Screens <i class="fa fa-angle-down" aria-hidden="true"></i>
-							</a>
-							<ul class="dropdown-menu level1">
-								<li><a href="crown.html">Crown Screen</a></li>
-								<!-- <li><a href="bloggrid.html">Weekliy Show Time</a></li> -->
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                                Screens <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li><a href="crown.html">Crown Screen</a></li>
+                                <!-- <li><a href="bloggrid.html">Weekliy Show Time</a></li> -->
 
-							</ul>
-						</li>
-						<!-- <li class="dropdown first">
+                            </ul>
+                        </li>
+                        <!-- <li class="dropdown first">
 							<a class="btn btn-default " data-toggle="dropdown" data-hover="dropdown">
 								Advertise
 							</a>
 
 						</li> -->
-						<!-- <li class="dropdown first">
+                        <!-- <li class="dropdown first">
 							<a class="btn btn-default " data-toggle="dropdown" data-hover="dropdown">
 								BulkBooking
 							</a>
 
 						</li> -->
-						<li class="dropdown first">
-							<a  href="contact.html"  data-hover="dropdown">
-								Contact US
-							</a>
+                        <li class="dropdown first">
+                            <a href="contact.html" data-hover="dropdown">
+                                Contact US
+                            </a>
 
-						</li>
-					</ul>
-					<ul class="nav navbar-nav flex-child-menu menu-right">
-						
-						
-						<li  style="background-color: #f5b50a; border-radius: 25px; margin-right:10px "><a href="snacks.html" style="color:black; ">Order Snacks</a></li>
-						<li  style="background-color: #f5b50a; border-radius: 25px; margin-right:10px "><a href="movie_sch.html" style="color:black; ">Movie Schadule</a></li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
-			</nav>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav flex-child-menu menu-right">
+
+
+                        <li style="background-color: #f5b50a; border-radius: 25px; margin-right:10px "><a
+                                href="snacks.html" style="color:black; ">Order Snacks</a></li>
+                        <li style="background-color: #f5b50a; border-radius: 25px; margin-right:10px "><a
+                                href="movie_sch.html" style="color:black; ">Movie Schadule</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
             <!-- search form -->
         </div>
 
@@ -242,27 +244,37 @@
                 <div class="col-lg-12 col-md-9 col-sm-12 col-xs-12">
 
                     <div class="form-style-1 user-pro" action="">
-                        <form action="" class="user">
+                        <form id="contact-form" class="user" id="contact-form" method="post" action="contact.php">
                             <h4>Contact US</h4>
                             <div class="row">
                                 <div class="col-md-6 form-it">
-                                    <label>First Name</label>
-                                    <input type="text" placeholder="edwardkennedy">
+                                    <label>Name</label>
+                                    <input type="text" placeholder="edwardkennedy" name="contact-name"
+                                        id="contact-name">
                                 </div>
                                 <div class="col-md-6 form-it">
-                                    <label>Last Name</label>
-                                    <input type="text" placeholder="Edward ">
+                                    <label>Message</label>
+                                    <textarea id="contact-message" name="contact-message" rows="5" cols="5"
+                                        placeholder="hello" style="font-family: 'Nunito', sans-serif;
+                                        font-size: 12px;
+                                        color: #abb7c4;
+                                        font-weight: 300;
+                                        text-transform: none;
+                                        background-color: #233a50;
+                                        border: none;border-radius: 3px !important;height: 40px;"></textarea>
                                 </div>
 
                             </div>
                             <div class="row">
                                 <div class="col-md-6 form-it">
                                     <label>Email Address</label>
-                                    <input type="email" placeholder="edward@kennedy.com">
+                                    <input type="email" placeholder="edward@kennedy.com" name="contact-email"
+                                        id="contact-email">
                                 </div>
                                 <div class="col-md-6 form-it">
                                     <label>Phone</label>
-                                    <input type="number" placeholder="9856742587">
+                                    <input type="number" placeholder="9856742587" name="contact-phone"
+                                        id="contact-phone">
                                 </div>
                             </div>
 
@@ -285,10 +297,10 @@
             <div class="col-md-9 col-sm-12 col-xs-12 col-lg-12 ">
                 <div class="title-hd">
                     <h2>Address</h2>
-                    
+
                 </div>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d14738.393053206397!2d72.944923130008!3d22.556717063053675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d22.566459299999998!2d72.9581575!4m5!1s0x395e4c291ec7de41%3A0x7b4c03b0b2155ee2!2sRs%20cinema%20google%20map!3m2!1d22.5474461!2d72.9546636!5e0!3m2!1sen!2sin!4v1639654966931!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d14738.517709763368!2d72.94492313000765!3d22.555550363063297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d22.5634482!2d72.9578672!4m5!1s0x395e4c291ec7de41%3A0x7b4c03b0b2155ee2!2srs%20cinema!3m2!1d22.5474461!2d72.9546636!5e0!3m2!1sen!2sin!4v1640151529033!5m2!1sen!2sin"
                     width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <!-- <div class="col-md-3 col-sm-12 col-xs-12">
