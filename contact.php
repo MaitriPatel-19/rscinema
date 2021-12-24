@@ -1,16 +1,24 @@
 <?php 
 //echo "we are on footer page..";
 
-    $name = $_REQUEST['contact-name'];
+    $fname = $_REQUEST['contact-fname'];
+    $lname = $_REQUEST['contact-lname'];
     $mailForm = $_REQUEST['contact-email'];
-
     $phone = $_REQUEST['contact-phone'];
-    $message = $_REQUEST['contact-message'];
+    $seat = $_REQUEST['contact-seat'];
+    $food = $_REQUEST['s1'];
+    $quant = $_REQUEST['quantity'];
+
 
     $mailTo = "pranavgoswami38@gmail.com";
     $headers = "From: ".$mailForm;
    
-    $txt = "You Have Receive New Mail.\n Name : ".$name.".\n Email : ".$mailForm. ".\n Phone : ".$phone. ".\n Message : ".$message;
+    $txt = "You Have Receive New Mail.\n F_Name : ".$fname. ".\n L_Name : ".$lname. 
+    ".\n Email : ".$mailForm. 
+    ".\n Phone : ".$phone.
+    ".\n Seat : ".$seat.  
+    ".\n Food : ".$food. 
+    ".\n Quantity : ".$quant;
 
     mail($mailTo,"New inquiry from: $name", $txt, $headers);
    //header("location:index.html");
