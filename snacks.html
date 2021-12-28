@@ -160,7 +160,7 @@
     </div>
     <!--end of preloading-->
     <!--login form popup-->
-    >
+    
     <!--end of login form popup-->
     <!--signup form popup-->
 
@@ -313,7 +313,7 @@
                                 <span>Popcorn & colddrink</span><br>
                                 <div class="btn-transform transform-vertical" style="padding: 10px 54px;">
                                     <div><a href="#" class="item item-1 redbtn">Add </a></div>
-                                    <div><a href="#" class="item item-2 redbtn hvrbtn">ADD</a></div>
+                                    <div><a  onclick="" class="item item-2 redbtn hvrbtn">ADD</a></div>
                                 </div>
                             </div>
                         </div>
@@ -423,11 +423,9 @@
                             <div class="col-md-6 form-it">
 
                                 <label>Order Detail</label><br>
-                                <select class="selectpicker" onclick="
-                                var el = document.getElementsByTagName('select')[0];
-                                alert(getSelectValues(el));
-                              " multiple style="width: 100px!important;" id="s1" name="s1">
-                                    <option value="popcorn">Popcorn</option>
+                                <select class="selectpicker" 
+                               multiple style="width: 100px!important;" id="s1" name="s1">
+                                    <option onclick="prnv('popcorn')" value="popcorn">Popcorn</option>
                                     <option value="Popcorn & Chicken">Popcorn & Chicken</option>
                                     <option value="popcorn">Popcorn & Cold drinks</option>
                                     <option value="Popcorn & Cold drinks">Popcorns & Cold Drinks</option>
@@ -438,6 +436,9 @@
                                 </select>
                             </div>
                             <script type="text/javascript">
+                                function prnv(val){
+                                    alert(val);
+                                }
        
                                 function getSelectValues(select) {
                                     alert('hello');
@@ -452,8 +453,8 @@
                                          result.push(opt.value || opt.text);
                                          }
                                  }
-                           return result;
-                         }
+                                    return result;
+                                }
                          </script>
                         </div>
                         <div class="row">
@@ -520,7 +521,7 @@
         <div class="row">
             <div class="flex-parent-ft">
                 <div class="flex-child-ft item1">
-                    <a href="index.html"><img class="logo" src="assets/images/Logo-1.png" alt=""></a>
+                    <a href="index.html"><img class="logo" src="assets/images/Logo-1.png" alt="" width="200"></a>
                     <p>Rajshivalay Road,<br>
                         Anand, Gujarat 388001</p>
                     <p>Call us: <a href="tel:+91 02692 - 247047 "></a>+91 02692 - 247047 / 247147 </p>

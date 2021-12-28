@@ -6,12 +6,13 @@
     $mailForm = $_REQUEST['contact-email'];
     $phone = $_REQUEST['contact-phone'];
     $seat = $_REQUEST['contact-seat'];
-    $food = $_REQUEST['s1'];
+    $food = $GET['s1'];
     $quant = $_REQUEST['quantity'];
 
 
-    $mailTo = "pranavgoswami38@gmail.com";
+    $mailTo = "info@rnscinemas.com";
     $headers = "From: ".$mailForm;
+    
    
     $txt = "You Have Receive New Mail.\n F_Name : ".$fname. ".\n L_Name : ".$lname. 
     ".\n Email : ".$mailForm. 
