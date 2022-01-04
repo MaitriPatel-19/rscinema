@@ -4050,7 +4050,7 @@ ul {
 .trailers.full-width,
 .latestnew.full-width,
 .full-width {
-  padding: 70px 100px;
+  padding: 40px 100px;
 }
 @media (max-width: 767px) {
   .movie-items.full-width,
@@ -7801,7 +7801,7 @@ header {
   position: absolute;
   z-index: 100;
   width: 100%;
-  background-color: transparent;
+ background-color: #0f2133;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
