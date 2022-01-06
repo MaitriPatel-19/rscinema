@@ -109,7 +109,7 @@
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 450px;
   }
 }
 @media (min-width: 992px) {
@@ -119,7 +119,7 @@
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1388px;
   }
 }
 .container-fluid {
@@ -1687,6 +1687,19 @@ select[multiple].input-lg {
   margin-bottom: 10px;
   color: #737373;
 }
+.button {
+  background-color: #f5b50a; 
+  border: none;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
 @media (min-width: 768px) {
   .form-inline .form-group {
     display: inline-block;
@@ -2284,7 +2297,8 @@ tbody.collapse.in {
   padding: 9px 10px;
   margin-top: 8px;
   margin-bottom: 8px;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: #0f2133 !important;
   background-image: none;
   border-radius: 0;
 }
@@ -4050,7 +4064,7 @@ ul {
 .trailers.full-width,
 .latestnew.full-width,
 .full-width {
-  padding: 40px 100px;
+  padding: 40px 42px;
 }
 @media (max-width: 767px) {
   .movie-items.full-width,
@@ -4062,13 +4076,16 @@ ul {
 }
 .full-width-hd,
 .full-width-ft {
-  padding: 0 100px;
+  padding: 10px 100px;
 }
 @media (max-width: 767px) {
   .full-width-hd,
-  .full-width-ft {
-    padding: 0 30px;
+  .full-width-ft
+  .sticky {
+    padding: 8px 33px;
+    height: 80px !important;
   }
+ 
 }
 .movie-items .slide-it {
   display: flex;
@@ -7056,7 +7073,7 @@ p.ceb-single {
   text-align: center;
   background-size: cover;
   position: relative;
-  padding-top: 200px;
+  padding-top: 250px;
   padding-bottom: 50px;
   display: -webkit-flex;
   display: -moz-box;
@@ -7136,9 +7153,10 @@ p.ceb-single {
   text-align: right;
 }
 .sliderv2 {
-  background: url('../images/crown/new2.jpg') no-repeat;
+  /* background: url('../images/crown/new2.jpg') no-repeat; */
+  background-color:#0f2133 ;
   padding-bottom: 0;
-  padding-top: 180px;
+  padding-top: 90px;
   overflow: hidden;
   background-position: center;
   /* max-height: 100%; */
@@ -7222,7 +7240,7 @@ p.ceb-single {
   margin-right: 30px;
 }
 @media (max-width: 991px) {
-  .sliderv2 .movie-item .mv-img-2 {
+  .movie-item .mv-img-2 {
     width: 400px;
     height: 400px;
   }
@@ -7234,17 +7252,29 @@ p.ceb-single {
   .sliderv2 {
     padding-top: 100px;
   }
-  .sliderv2 .slider-single-item {
-    max-width: 300px;
+  .sliderv2 .slider-single-item{
+    max-width: 330px;
     padding-top: 0;
+    /* width: 93%; */
   }
   .sliderv2 .slider-single-item .movie-item .title-in {
     margin-left: 10px;
     margin-bottom: 15px;
   }
+  .slick-slide img
+{
+    width:90%;
+}
+  .button 
+{
+  padding: 10px;
+  font-size: 12px;
+}
 }
 .slider-single-item .slick-next {
-  right: -100px;
+  right: 70px;
+  transform: translateY(-50%);
+	z-index: 9999;
 }
 @media (max-width: 991px) {
   .slider-single-item .slick-next {
@@ -7252,7 +7282,9 @@ p.ceb-single {
   }
 }
 .slider-single-item .slick-prev {
-  left: -100px;
+  left: 40px;
+  transform: translateY(-50%);
+	z-index: 9999;
 }
 @media (max-width: 991px) {
   .slider-single-item .slick-prev {
@@ -7801,7 +7833,9 @@ header {
   position: absolute;
   z-index: 100;
   width: 100%;
- background-color: #0f2133;
+  height: 110px !important;
+  background-color: #0f2133;
+  /* background-color: transparent; */
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
@@ -7814,7 +7848,7 @@ header {
 }
 header .navbar-default {
   margin-bottom: 0;
-  padding: 30px 0;
+  padding: 20px 23px;
   background-color: transparent;
   border: none;
   position: relative;
@@ -8045,6 +8079,7 @@ header#headerv3-light {
   background-color: #0f2133;
   position: fixed;
   width: 100%;
+  height: 100px !important;
   z-index: 9999;
   -moz-opacity: 1;
   -khtml-opacity: 1;
@@ -8078,6 +8113,7 @@ header#headerv3-light {
     border-top: none !important;
     height: auto !important;
     max-height: none !important;
+    background-color: #0f2133 !important;
   }
   header .navbar-header {
     width: 100%;

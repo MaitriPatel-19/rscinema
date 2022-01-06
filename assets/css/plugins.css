@@ -2463,8 +2463,8 @@
     font-size: 20px;
     line-height: 1;
 
-    opacity: .75;
-    color: white;
+    opacity: 1.75;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -2682,7 +2682,7 @@
 }
 .slick-slide img
 {
-    width:100%;
+    width:97%;
 }
 .slick-slide.slick-loading img
 {
