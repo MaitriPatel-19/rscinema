@@ -7068,7 +7068,7 @@ p.ceb-single {
   background-color: #00b9ef;
 }
 .slider {
-  background: url('../images/uploads/slider-bg.jpg') no-repeat;
+  /* background: url('../images/uploads/slider-bg.jpg') no-repeat; */
   background-position: center;
   text-align: center;
   background-size: cover;
@@ -7155,8 +7155,8 @@ p.ceb-single {
 .sliderv2 {
   /* background: url('../images/crown/new2.jpg') no-repeat; */
   background-color:#0f2133 ;
-  padding-bottom: 0;
-  padding-top: 90px;
+  /* padding-bottom: 0;
+  padding-top: 90px; */
   overflow: hidden;
   background-position: center;
   /* max-height: 100%; */
@@ -7276,6 +7276,7 @@ p.ceb-single {
   transform: translateY(-50%);
 	z-index: 9999;
 }
+
 @media (max-width: 991px) {
   .slider-single-item .slick-next {
     right: 0;
