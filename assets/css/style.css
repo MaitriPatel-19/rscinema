@@ -31,6 +31,16 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
+/* @media screen (min-width : 768px){
+  body{
+    zoom: 100%;
+  }
+} */
+body{
+  overflow-x:hidden !important;
+}
+
 @media print {
   *,
   *:before,
@@ -119,7 +129,8 @@
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1388px;
+    /* width: 1388px; */
+    width: 1370px;
   }
 }
 .container-fluid {
@@ -2518,8 +2529,9 @@ tbody.collapse.in {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
+  color: #f5b50a;
+  /* color: #555; */
+  /* background-color: #e7e7e7; */
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -3613,7 +3625,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 article,
 aside,
