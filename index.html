@@ -20,6 +20,7 @@
 
 	<!--Google Font-->
 	<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Mobile specific meta -->
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone-no">
@@ -27,6 +28,7 @@
 	<!-- CSS files -->
 	<link rel="stylesheet" href="assets/css/plugins.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+
 
 </head>
 
@@ -53,18 +55,18 @@
 					<div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
 						aria-expanded="true">
 						<span class="sr-only">Toggle navigation</span>
-						<div id="nav-icon1" class="open">
+						<div id="nav-icon1">
 							<span></span>
 							<span></span>
 							<span></span>
 						</div>
 					</div>
-					<a href="index.html"><img class="logo" src="assets/images/Logo-1.png" alt="" width="119"
+					<a href="index.html"><img class="logo" src="assets/images/Logo-1.png" alt="" width="200"
 							height="58"></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="navbar-collapse flex-parent collapse in" id="bs-example-navbar-collapse-1"
-					aria-expanded="true" style="padding: 10px;">
+				<div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1" aria-expanded="true"
+					style="padding: 10px;">
 					<ul class="nav navbar-nav flex-child-menu menu-left">
 						<li class="hidden">
 							<a href="#page-top"></a>
@@ -94,16 +96,16 @@
 							</ul>
 						</li> -->
 						<li class="dropdown first">
-							<a href="crown.html"  data-hover="dropdown">
-								Crown </a>
-							<!-- <i class="fa fa-angle-down" aria-hidden="true"></i> -->
+                            <a href="#" data-toggle="dropdown">
+                                Crown </a>
+                            <i class="fa fa-angle-down" aria-hidden="true" style="color: #fff !important;"></i>
 
-							<!-- <ul class="dropdown-menu level1">
-								<li><a href="crown.html">Crown Screen</a></li>
-								<li><a href="bloggrid.html">Weekliy Show Time</a></li>
+                            <ul class="dropdown-menu level1">
+                                <li><a href="crown.html">Crown Screen</a></li>
+                                <li><a href="crownscreen.html">Crown Screen Movies</a></li>  
 
-							</ul> -->
-						</li>
+                            </ul>
+                        </li>
 						<!-- <li class="dropdown first">
 							<a class="btn btn-default " data-toggle="dropdown" data-hover="dropdown">
 								Advertise
@@ -134,7 +136,7 @@
 							</a>
 						</li> -->
 					</ul>
-					
+
 				</div>
 				<!-- /.navbar-collapse -->
 			</nav>
@@ -149,19 +151,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="slider-single-item" style="margin-top: 18px;">
+					
 					<div class="movie-item">
 						<div class="row">
-							<img src="assets/images/uploads/slide1.jpeg" alt="">
+							<img src="assets/images/uploads/Heropanti2.jpg" alt="">
 						</div>
 					</div>
 					<div class="movie-item">
 						<div class="row">
-							<img src="assets/images/uploads/slide2.jpeg" alt="">
-						</div>
-					</div>
-					<div class="movie-item">
-						<div class="row">
-							<img src="assets/images/uploads/slide3.jpg" alt="">
+							<img src="assets/images/uploads/KGF.jpg" alt="">
 						</div>
 					</div>
 					<div class="movie-item">
@@ -169,12 +167,15 @@
 							<img src="assets/images/uploads/Food Banner.jpg" alt="">
 						</div>
 					</div>
+					<div class="movie-item">
+						<div class="row">
+							<img src="assets/images/uploads/Runaway34.jpg" alt="">
+						</div>
+					</div>
 				</div>
 			</div>
-			<button class="button"><a href="snacks.html"
-				style="color:black; ">Order Snacks</button>
-			<button class="button"><a href="movie_sch.html"
-				style="color:black; ">Movie Schedule</button>
+			<!-- <button class="button"><a href="snacks.html"><b>Order Snacks</b></button>
+			<button class="button"><a href="movie_sch.html"> <b>Movie Schedule</b> </button> -->
 			<!-- <ul>
 				<li style="background-color: #f5b50a; border-radius: 25px; margin:10px "><a href="snacks.html"
 						style="color:black; ">Order Snacks</a></li>
@@ -182,24 +183,19 @@
 						href="movie_sch.html" style="color:black; ">Movie Schadule</a></li>
 			</ul> -->
 		</div>
-		
+
 	</div>
-	
+
 
 	<div class="movie-items  full-width">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-lg-12">
 				<div class="title-hd">
 					<h2>Running Now</h2>
-					<a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+					<!-- <a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a> -->
 				</div>
 				<div class="tabs">
-					<ul class="tab-links">
-						<!-- <li class="active"><a href="#tab1-h2">#Popular</a></li>
-						<li><a href="#tab2-h2"> #Coming soon</a></li> -->
-						<!-- <li><a href="#tab3-h2"> #Top rated </a></li> -->
-						<!-- <li><a href="#tab4-h2"> #Most reviewed</a></li> -->
-					</ul>
+
 					<div class="tab-content">
 						<div id="tab1-h2" class="tab active" style="margin-top: 40px;">
 							<div class="row">
@@ -207,89 +203,60 @@
 									<div class="slide-it">
 										<div class="movie-item">
 											<div class="mv-img">
-												<img src="assets/images/uploads/img22.jpg" alt="">
+												<img src="assets/images/uploads/kgf.jpeg" alt="">
 											</div>
 											<div class="hvr-inner">
 												<a href="movie_sch.html"> Read more <i
 														class="ion-android-arrow-dropright"></i> </a>
 											</div>
 											<div class="title-in">
-												<h6><a href="#">Pushpa</a></h6>
+												<h6><a href="#">K.G.F Chapter-2</a></h6>
 
 											</div>
 										</div>
 									</div>
-									<!-- <div class="slide-it">
-										<div class="movie-item">
-											<div class="mv-img">
-												<img src="assets/images/uploads/img1.jpg" alt="">
-											</div>
-											<div class="hvr-inner">
-												<a href="movie_sch.html"> Read more <i
-														class="ion-android-arrow-dropright"></i> </a>
-											</div>
-											<div class="title-in">
-												<h6><a href="#">Sooryavanshi</a></h6>
 
-											</div>
-										</div>
-									</div> -->
-									<!-- <div class="slide-it">
-										<div class="movie-item">
-											<div class="mv-img">
-												<img src="assets/images/uploads/img3.jpg" alt="">
-											</div>
-											<div class="hvr-inner">
-												<a href="movie_sch.html"> Read more <i
-														class="ion-android-arrow-dropright"></i> </a>
-											</div>
-											<div class="title-in">
-												<h6><a href="#">Bhool bhulaiyaa2</a></h6>
-
-											</div>
-										</div>
-									</div> -->
-									<!-- <div class="slide-it">
-										<div class="movie-item">
-											<div class="mv-img">
-												<img src="assets/images/uploads/img4.jpg" alt="">
-											</div>
-											<div class="hvr-inner">
-												<a href="movie_sch.html"> Read more <i
-														class="ion-android-arrow-dropright"></i> </a>
-											</div>
-											<div class="title-in">
-												<h6><a href="#">Satyameva jayate 2</a></h6>
-
-											</div>
-										</div>
-									</div> -->
-									<!-- <div class="slide-it">
-										<div class="movie-item">
-											<div class="mv-img">
-												<img src="assets/images/uploads/img5.jpg" alt="">
-											</div>
-											<div class="hvr-inner">
-												<a href="movie_sch.html"> Read more <i
-														class="ion-android-arrow-dropright"></i> </a>
-											</div>
-											<div class="title-in">
-												<h6><a href="#">Bhavai</a></h6>
-
-											</div>
-										</div>
-									</div> -->
 									<div class="slide-it">
 										<div class="movie-item">
 											<div class="mv-img">
-												<img src="assets/images/uploads/img6.jpg" alt="">
+												<img src="assets/images/uploads/kf.jpg" alt="">
 											</div>
 											<div class="hvr-inner">
 												<a href="movie_sch.html"> Read more <i
 														class="ion-android-arrow-dropright"></i> </a>
 											</div>
 											<div class="title-in">
-												<h6><a href="#">83</a></h6>
+												<h6><a href="#">Heropanti-2</a></h6>
+
+											</div>
+										</div>
+									</div>
+									<div class="slide-it">
+										<div class="movie-item">
+											<div class="mv-img">
+												<img src="assets/images/uploads/img25.jpg" alt="">
+											</div>
+											<div class="hvr-inner">
+												<a href="movie_sch.html"> Read more <i
+														class="ion-android-arrow-dropright"></i> </a>
+											</div>
+											<div class="title-in">
+												<h6><a href="#">RRR </a></h6>
+
+											</div>
+										</div>
+									</div>
+									<div class="slide-it">
+										<div class="movie-item">
+											<div class="mv-img">
+												<img src="assets/images/uploads/img29.jpg" alt="">
+											</div>
+											<div class="hvr-inner">
+												<a href="movie_sch.html"> Read more <i
+														class="ion-android-arrow-dropright"></i> </a>
+											</div>
+											<div class="title-in">
+												<h6><a href="#">Runaway34</a></h6>
 
 											</div>
 										</div>
@@ -297,33 +264,18 @@
 									<!-- <div class="slide-it">
 										<div class="movie-item">
 											<div class="mv-img">
-												<img src="assets/images/uploads/img7.jpg" alt="">
+												<img src="assets/images/uploads/pp.jpg" alt="">
 											</div>
 											<div class="hvr-inner">
 												<a href="movie_sch.html"> Read more <i
 														class="ion-android-arrow-dropright"></i> </a>
 											</div>
 											<div class="title-in">
-												<h6><a href="#">Bunty aur babli 2 </a></h6>
+												<h6><a href="#">Prem Prakran</a></h6>
 
 											</div>
 										</div>
 									</div> -->
-									<div class="slide-it">
-										<div class="movie-item">
-											<div class="mv-img">
-												<img src="assets/images/uploads/img12.jpg" alt="">
-											</div>
-											<div class="hvr-inner">
-												<a href="movie_sch.html"> Read more <i
-														class="ion-android-arrow-dropright"></i> </a>
-											</div>
-											<div class="title-in">
-												<h6><a href="#">SpiderMan-No way to home</a></h6>
-
-											</div>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -544,19 +496,74 @@
 				</div>
 				<div class="title-hd">
 					<h2>Coming Soon</h2>
-					<a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+					<!-- <a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a> -->
 				</div>
 				<div class="tabs">
 					<ul class="tab-links-2">
-						<!-- <li class="active"><a href="#tab21-h2">#Popular</a></li>
-						<li><a href="#tab22-h2"> #Coming soon</a></li> -->
+						<li class="active"><a href="#tab22-h2">#May</a></li>
+						<!-- <li><a href="#tab21-h2"> #May</a></li> -->
 						<!-- <li><a href="#tab23-h2"> #Top rated </a></li>
 						<li><a href="#tab24-h2"> #Most reviewed</a></li> -->
 					</ul>
 					<div class="tab-content">
-						<div id="tab21-h2" class="tab active" style="margin-top: 40px;">
+						<div id="tab21-h2" class="tab" style="margin-top: 40px;">
 							<div class="row">
 								<div class="slick-multiItem2">
+									<!-- <div class="slide-it">
+											<div class="movie-item">
+												<div class="mv-img">
+													<img src="assets/images/uploads/img9.jpg" alt="">
+												</div>
+												<div class="hvr-inner"  style="background-color: transparent !important; padding: 0px; width: 178px; ">
+													<a style="color: #f0c300 !important;"> Release Date </a><br>
+													<h3 style="color: white !important;"> 25 Feb 2022 </h3>
+												</div>
+												<div class="title-in">
+													<h6>Gangubai Kathiyavadi</h6>
+
+												</div>
+											</div>
+										</div> -->
+									<!-- <div class="slide-it">
+										<div class="movie-item">
+											<div class="mv-img">
+												<img src="assets/images/uploads/img3.jpg" alt="">
+											</div>
+											<div class="hvr-inner">
+												<a href="movie_sch.html"> Read more <i
+														class="ion-android-arrow-dropright"></i> </a>
+											</div>
+											<div class="hvr-inner"
+												style="background-color: transparent !important; padding: 0px; width: 178px; ">
+												<a style="color: #f0c300 !important;"> Release Date </a><br>
+												<h3 style="color: white !important;"> 4 March 2022 </h3>
+
+											</div>
+											<div class="title-in">
+												<h6 style="color: white;">Batman</h6>
+
+											</div>
+										</div>
+									</div>
+									<div class="slide-it">
+										<div class="movie-item">
+											<div class="mv-img">
+												<img src="assets/images/uploads/img16.jpg" alt="">
+											</div>
+											<div class="hvr-inner">
+												<a href="movie_sch.html"> Read more <i
+														class="ion-android-arrow-dropright"></i> </a>
+											</div>
+											<div class="hvr-inner"
+												style="background-color: transparent !important; padding: 0px; width: 178px; ">
+												<a style="color: #f0c300 !important;"> Release Date </a><br>
+												<h3 style="color: white !important;"> 4 March 2022 </h3>
+											</div>
+											<div class="title-in">
+												<h6 style="color: white;">Jhund</h6>
+											</div>
+										</div>
+									</div>
 									<div class="slide-it">
 										<div class="movie-item">
 											<div class="mv-img">
@@ -567,67 +574,40 @@
 														class="ion-android-arrow-dropright"></i> </a>
 											</div>
 											<div class="title-in">
-												<h6><a href="#">Radhe Shyam</a></h6>
-
-											</div>
-										</div>
-									</div>
-									<div class="slide-it">
-										<div class="movie-item">
-											<div class="mv-img">
-												<img src="assets/images/uploads/img24.jpg" alt="">
-											</div>
-											<div class="hvr-inner">
-												<a href="movie_sch.html"> Read more <i
-														class="ion-android-arrow-dropright"></i> </a>
-											</div>
-											<div class="title-in">
-												<h6><a href="#">Attack</a></h6>
-
-											</div>
-										</div>
-									</div>
-									<div class="slide-it">
-										<div class="movie-item">
-											<div class="mv-img">
-												<img src="assets/images/uploads/img9.jpg" alt="">
-											</div>
-											<div class="hvr-inner">
-												<a href="movie_sch.html"> Read more <i
-														class="ion-android-arrow-dropright"></i> </a>
-											</div>
-											<div class="title-in">
-												<h6><a href="#">Pruthviraj</a></h6>
-											</div>
-										</div>
-									</div>
-									<div class="slide-it">
-										<div class="movie-item">
-											<div class="mv-img">
-												<img src="assets/images/uploads/img14.jpg" alt="">
-											</div>
-											<div class="hvr-inner">
-												<a href="movie_sch.html"> Read more <i
-														class="ion-android-arrow-dropright"></i> </a>
-											</div>
-											<div class="title-in">
 												<h6><a href="#">Bachchan Pandey</a></h6>
 
 											</div>
+											<div class="hvr-inner"
+												style="background-color: transparent !important; padding: 0px; width: 178px; ">
+												<a style="color: #f0c300 !important;"> Release Date </a><br>
+												<h3 style="color: white !important;"> 11 March 2022 </h3>
+											</div>
+											<div class="title-in">
+												<h6 style="color: white;">Radhe Shyam</h6>
+											</div>
 										</div>
-									</div>
+									</div> -->
 									<div class="slide-it">
 										<div class="movie-item">
 											<div class="mv-img">
-												<img src="assets/images/uploads/img3.jpg" alt="">
+												<img src="assets/images/uploads/111111.jpg" alt="">
 											</div>
-											<div class="hvr-inner">
+											<!-- <div class="hvr-inner">
 												<a href="movie_sch.html"> Read more <i
 														class="ion-android-arrow-dropright"></i> </a>
 											</div>
 											<div class="title-in">
 												<h6><a href="#">Bhool bhulaiyaa2</a></h6>
 
+											</div> -->
+											<div class="hvr-inner"
+												style="background-color: transparent !important; padding: 0px; width: 178px; ">
+
+												<a style="color: #f0c300 !important;"> Release Date </a><br>
+												<h3 style="color: white !important;"> 6 May 2022 </h3>
+											</div>
+											<div class="title-in">
+												<h6 style="color: white;">Doctor strange</h6>
 											</div>
 										</div>
 									</div>
@@ -706,21 +686,7 @@
 											</div>
 										</div>
 									</div> -->
-									<div class="slide-it">
-										<div class="movie-item">
-											<div class="mv-img">
-												<img src="assets/images/uploads/img16.jpg" alt="">
-											</div>
-											<div class="hvr-inner">
-												<a href="movie_sch.html"> Read more <i
-														class="ion-android-arrow-dropright"></i> </a>
-											</div>
-											<div class="title-in">
-												<h6><a href="#">Shamshera</a></h6>
-
-											</div>
-										</div>
-									</div>
+								
 									<!-- <div class="slide-it">
 										<div class="movie-item">
 											<div class="mv-img">
@@ -754,44 +720,62 @@
 								</div>
 							</div>
 						</div>
-						<!-- <div id="tab22-h2" class="tab" style="margin-top: 40px;">
+						<div id="tab22-h2" class="tab  active" style="margin-top: 40px;">
 							<div class="row">
 								<div class="slick-multiItem2">
 
 									<div class="slide-it">
 										<div class="movie-item">
 											<div class="mv-img">
-												<img src="assets/images/uploads/img13.jpg" alt="">
+												<img src="assets/images/uploads/111111.jpg" alt="">
 											</div>
-											<div class="hvr-inner">
-												<a href="movie_sch.html"> Read more <i
-														class="ion-android-arrow-dropright"></i> </a>
-											</div>
-											<div class="title-in">
-												<h6><a href="#">Radhe Shyam</a></h6>
-
-											</div>
-										</div>
-									</div>
-									<div class="slide-it">
-										<div class="movie-item">
-											<div class="mv-img">
-												<img src="assets/images/uploads/img14.jpg" alt="">
-											</div>
-											<div class="hvr-inner">
+											<!-- <div class="hvr-inner">
 												<a href="movie_sch.html"> Read more <i
 														class="ion-android-arrow-dropright"></i> </a>
 											</div>
 											<div class="title-in">
 												<h6><a href="#">Bachchan Pandey</a></h6>
 
+											</div> -->
+											<div class="hvr-inner"
+												style="background-color: transparent !important; padding: 0px; width: 178px; ">
+
+												<a style="color: #f0c300 !important;"> Release Date </a><br>
+												<h3 style="color: white !important;"> 6 May 2022 </h3>
+											</div>
+											<div class="title-in">
+												<h6 style="color: white;">Doctor Strange											</h6>
 											</div>
 										</div>
 									</div>
 									<div class="slide-it">
 										<div class="movie-item">
 											<div class="mv-img">
-												<img src="assets/images/uploads/img15.jpeg" alt="">
+												<img src="assets/images/upcoming/5.png" alt="">
+											</div>
+											<!-- <div class="hvr-inner">
+												<a href="movie_sch.html"> Read more <i
+														class="ion-android-arrow-dropright"></i> </a>
+											</div>
+											<div class="title-in">
+												<h6><a href="#">Bachchan Pandey</a></h6>
+
+											</div> -->
+											<div class="hvr-inner"
+												style="background-color: transparent !important; padding: 0px; width: 178px; ">
+
+												<a style="color: #f0c300 !important;"> Release Date </a><br>
+												<h3 style="color: white !important;"> 13 May 2022 </h3>
+											</div>
+											<div class="title-in">
+												<h6 style="color: white;">Jayeshbhai jordaar</h6>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="slide-it">
+										<div class="movie-item">
+											<div class="mv-img">
+												<img src="assets/images/uploads/img27.jpg" alt="">
 											</div>
 											<div class="hvr-inner">
 												<a href="movie_sch.html"> Read more <i
@@ -801,38 +785,138 @@
 												<h6><a href="#">Adipurush</a></h6>
 
 											</div>
+											<div class="hvr-inner"
+												style="background-color: transparent !important; padding: 0px; width: 178px; ">
+
+												<a style="color: #f0c300 !important;"> Release Date </a><br>
+												<h3 style="color: white !important;"> 14 April 2022 </h3>
+											</div>
+											<div class="title-in">
+												<h6 style="color: white;">KGF Chapter-2</h6>
+											</div>
 										</div>
-									</div>
+									</div> -->
 									<div class="slide-it">
 										<div class="movie-item">
 											<div class="mv-img">
-												<img src="assets/images/uploads/img16.jpg" alt="">
+												<img src="assets/images/upcoming/5.jpg" alt="">
 											</div>
-											<div class="hvr-inner">
+											<!-- <div class="hvr-inner">
 												<a href="movie_sch.html"> Read more <i
 														class="ion-android-arrow-dropright"></i> </a>
 											</div>
 											<div class="title-in">
 												<h6><a href="#">Shamshera</a></h6>
 
+											</div> -->
+											<div class="hvr-inner"
+												style="background-color: transparent !important; padding: 0px; width: 178px; ">
+
+												<a style="color: #f0c300 !important;"> Release Date </a><br>
+												<h3 style="color: white !important;"> 20 May 2022 </h3>
+											</div>
+											<div class="title-in">
+												<h6 style="color: white;">Bhool bhulaiyaa - 2</h6>
 											</div>
 										</div>
 									</div>
 									<div class="slide-it">
 										<div class="movie-item">
 											<div class="mv-img">
-												<img src="assets/images/uploads/img3.jpg" alt="">
+												<img src="assets/images/uploads/img28.jpg" alt="">
 											</div>
-											<div class="hvr-inner">
+											<!-- <div class="hvr-inner">
+												<a href="movie_sch.html"> Read more <i
+														class="ion-android-arrow-dropright"></i> </a>
+											</div>
+											<div class="title-in">
+												<h6><a href="#">Shamshera</a></h6>
+
+											</div> -->
+											<div class="hvr-inner"
+												style="background-color: transparent !important; padding: 0px; width: 178px; ">
+
+												<a style="color: #f0c300 !important;"> Release Date </a><br>
+												<h3 style="color: white !important;"> 20 May 2022 </h3>
+											</div>
+											<div class="title-in">
+												<h6 style="color: white;">Dhaakad</h6>
+											</div>
+										</div>
+									</div>
+									<div class="slide-it">
+										<div class="movie-item">
+											<div class="mv-img">
+												<img src="assets/images/upcoming/6.png" alt="">
+											</div>
+											<!-- <div class="hvr-inner">
+												<a href="movie_sch.html"> Read more <i
+														class="ion-android-arrow-dropright"></i> </a>
+											</div>
+											<div class="title-in">
+												<h6><a href="#">Shamshera</a></h6>
+
+											</div> -->
+											<div class="hvr-inner"
+												style="background-color: transparent !important; padding: 0px; width: 178px; ">
+
+												<a style="color: #f0c300 !important;"> Release Date </a><br>
+												<h3 style="color: white !important;"> 27 May 2022 </h3>
+											</div>
+											<div class="title-in">
+												<h6 style="color: white;">Top gun: Maverick</h6>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="slide-it">
+										<div class="movie-item">
+											<div class="mv-img">
+												<img src="assets/images/uploads/img29.jpg" alt="">
+											</div> -->
+											<!-- <div class="hvr-inner">
 												<a href="movie_sch.html"> Read more <i
 														class="ion-android-arrow-dropright"></i> </a>
 											</div>
 											<div class="title-in">
 												<h6><a href="#">Bhool bhulaiyaa2</a></h6>
 
+											</div> -->
+											<!-- <div class="hvr-inner"
+												style="background-color: transparent !important; padding: 0px; width: 178px; ">
+
+												<a style="color: #f0c300 !important;"> Release Date </a><br>
+												<h3 style="color: white !important;"> 29 April 2022 </h3>
+											</div>
+											<div class="title-in">
+												<h6 style="color: white;">Runaway 34</h6>
+											</div>
+										</div> -->
+									<!-- </div> -->
+									<!-- <div class="slide-it">
+										<div class="movie-item">
+											<div class="mv-img">
+												<img src="assets/images/uploads/kf.jpg" alt="">
+											</div> -->
+											<!-- <div class="hvr-inner">
+												<a href="movie_sch.html"> Read more <i
+														class="ion-android-arrow-dropright"></i> </a>
+											</div>
+											<div class="title-in">
+												<h6><a href="#">Bachchan Pandey</a></h6>
+
+											</div> -->
+											<!-- <div class="hvr-inner"
+												style="background-color: transparent !important; padding: 0px; width: 178px; ">
+
+												<a style="color: #f0c300 !important;"> Release Date </a><br>
+												<h3 style="color: white !important;"> 29 April 2022 </h3>
+											</div>
+											<div class="title-in">
+												<h6 style="color: white;">Heropanti - 2</h6>
 											</div>
 										</div>
-									</div>
+									</div> -->
+									
 								</div>
 							</div>
 						</div>
@@ -987,7 +1071,7 @@
 									</div>
 								</div>
 							</div>
-						</div> -->
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1134,13 +1218,13 @@
 	<!-- latest new v2 section-->
 	<div class="latestnew full-width">
 		<div class="row">
-			<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="ads adsv2">
 					<img src="assets/images/uploads/ads2.png" alt="">
 				</div>
 				<div class="title-hd">
 					<h2>Latest news</h2>
-					<a href="index.html" class="viewall">see all news <i class="ion-ios-arrow-right"></i></a>
+					<!-- <a href="index.html" class="viewall">see all news <i class="ion-ios-arrow-right"></i></a> -->
 				</div>
 				<div class="latestnewv2">
 					<div class="blog-item-style-2">
@@ -1154,7 +1238,7 @@
 								Cape of Good Films, based on a script.... </p>
 						</div>
 					</div>
-					<div class="blog-item-style-2">
+					<!-- <div class="blog-item-style-2">
 						<a href="index.html"><img src="assets/images/uploads/img112.png" alt=""></a>
 						<div class="blog-it-infor">
 							<h3><a href="index.html">Bhool Bhulaiyaa 2 motion poster: Kartik Aaryan film cranks up
@@ -1163,7 +1247,7 @@
 							<p>Kartik Aaryan announced that the horror-comedy will release in theatres on March 25,
 								2022. The film also stars Kiara Advani and Tabu in the lead roles. ...</p>
 						</div>
-					</div>
+					</div> -->
 					<div class="blog-item-style-2">
 						<a href="index.html"><img src="assets/images/uploads/img113.png" alt=""></a>
 						<div class="blog-it-infor">
@@ -1183,66 +1267,91 @@
 							<span class="time">17 Dec 2021</span>
 							<p>As if the multiverse mania confirmed for Spider-Man: No Way Home wasn’t providing enough
 								speculative hype, the film is rumored to feature a crucial Marvel Cinematic Universe
+								Netflix nod with the return of Daredevil. ...</p>
+						</div>
+					</div>
+					<!-- <div class="blog-item-style-2">
+						<a href="index.html"><img src="assets/images/uploads/img114.png" alt=""></a>
+						<div class="blog-it-infor">
+							<h3><a href="index.html">Amid Spider-Man: No Way Home Rumors, Charlie Cox Teases a
+									Rebooted Daredevil</a></h3>
+							<span class="time">17 Dec 2021</span>
+							<p>As if the multiverse mania confirmed for Spider-Man: No Way Home wasn’t providing enough
+								speculative hype, the film is rumored to feature a crucial Marvel Cinematic Universe
 								Netflix nod with the return of Charlie Cox’s Matt Murdock—and potentially his costumed
 								crime-fighting alter-ago, Daredevil. ...</p>
 						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-3 col-sm-12">
-				<div class="sidebar">
-					<div class="sb-facebook sb-it">
-						<h4 class="sb-title">Find us on Facebook</h4>
-						<iframe
-							src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FRSCinemas%2Fposts%2F5230660070283301&show_text=true&width=500"
-							width="300" height="700" style="border:none; overflow:hidden; color: white;" scrolling="no"
-							frameborder="0" allowfullscreen="true"
-							allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-					</div>
-					<!-- <div class="sb-twitter sb-it">
-						<h4 class="sb-title">Tweet to us</h4>
-						<div class="slick-tw">
-							<div class="tweet item" id="599202861751410688">
-							</div>
-							<div class="tweet item" id="297462728598122498">
-							</div>
-						</div>
 					</div> -->
+					<div>
+						<div class="sb-facebook sb-it">
+							<div class="blog-item-style-2">
+								<iframe
+								src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRSCinemas&tabs=timeline&width=350&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+								width="340" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+								allowfullscreen="true"
+								allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+							</div>
+							<!-- <h4 class="sb-title" style="color: white !important; margin-bottom: 15px;">Find us on Facebook
+							</h4> -->
+							
+						</div>
+						<!-- <div class="sb-twitter sb-it">
+							<h4 class="sb-title">Tweet to us</h4>
+							<div class="slick-tw">
+								<div class="tweet item" id="599202861751410688">
+								</div>
+								<div class="tweet item" id="297462728598122498">
+								</div>
+							</div>
+						</div> -->
+					</div>
 				</div>
 			</div>
 		</div>
 
 	</div>
+
+	<div _ngcontent-xfj-c1="" class="fl-fl float-tw"><i _ngcontent-xfj-c1="" class="fa fa-shopping-cart"></i>
+		<a
+			_ngcontent-xfj-c1="" href="snacks.html">Order Snacks</a>
+		<!-- <a _ngcontent-xfj-c1="" href="#" target="_blank" data-toggle="modal"
+			data-target="#exampleModalCenter">Order Snacks!</a> -->
+		</div>
+	<div _ngcontent-xfj-c1="" class="fl-fl float-ig"><i _ngcontent-xfj-c1="" class="fa fa-film"></i><a
+			_ngcontent-xfj-c1="" href="movie_sch.html">Movie Schedule</a></div>
+	<!-- <div _ngcontent-xfj-c1="" class="fl-fl float-in"><i _ngcontent-xfj-c1="" class="fa fa-linkedin"></i><a
+			_ngcontent-xfj-c1="" href="#" target="_blank">Follow us!</a></div> -->
+		
+			
 	<!--end of latest new v2 section-->
 	<!-- footer v2 section-->
 	<footer class="ht-footer full-width-ft" style="background-image: url('assets/images/bg2.jpg');">
 		<div class="row">
 			<div class="flex-parent-ft">
 				<div class="flex-child-ft item1">
-					<a href="index.html"><img class="logo" src="assets/images/Logo-1.png" alt="" width="200"></a>
+					<a href="index.html"><img class="logo" src="assets/images/Logo-1.png" alt="" width="119" style="margin-bottom: 30px;"></a>
 					<p>Rajshivalay Road,<br>
 						Anand, Gujarat 388001</p>
 					<p>Call us: <a href="tel:+91 02692 - 247047 "></a>+91 02692 - 247047 / 247147 </p>
 					<p>
-						Mail on: <a href="mailto:info@rnscinemas.com">info@rnscinemas.com</a>
+						Mail on: <a href="mailto:info@rnscinemas.com"></a>info@rnscinemas.com
 					</p>
 				</div>
 				<div class="flex-child-ft item2">
 					<h4>Resources</h4>
 					<ul>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Forums</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Help Center</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="advertise.html">Advertise</a></li>
+						<li><a href="crown.html">Crown</a></li>
+
 					</ul>
 				</div>
 				<div class="flex-child-ft item3">
-					<h4>Legal</h4>
+					<h4>Useful Links</h4>
 					<ul>
-						<li><a href="#">Terms of Use</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Security</a></li>
+						<li><a href="movie_sch.html">Movie Schedule</a></li>
+						<li><a href="groupbooking.html">Group Booking</a></li>
+						<!-- <li><a href="snacks.html">Order Snacks</a></li> -->
 					</ul>
 				</div>
 
@@ -1266,9 +1375,10 @@
 			</div>
 		</div>
 	</footer>
+
 	<!-- end of footer v2 section-->
-	
-	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+	<!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/plugins.js"></script>
 	<script src="assets/js/plugins2.js"></script>
